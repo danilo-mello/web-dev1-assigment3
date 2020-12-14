@@ -502,8 +502,7 @@ Featured Tours
 
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 
 
@@ -516,9 +515,10 @@ Featured Tours
   justify-content: flex-start;
   align-items: center;
   background-color: var(--clr-grey-10);
-  width: 30%;
+  width: 22.5%;
   height: auto;
-  margin: 5%;
+  margin: 1.5%;
+  box-shadow: 2px 2px;
 
 }
 
@@ -529,30 +529,38 @@ Featured Tours
 
 }
 
-.featured-tours-4 {
-
-  display: flex;
-  flex-direction: column;
-
-}
-
-.featured-tours-4  h4:nth-child(1) {
+.featured-tours-4 h4 {
 
   color: black;
   text-transform: capitalize;
   font-weight: 400;
   padding-top: 3%;
+  display: flex;
+  justify-content: space-between;
 
 }
 
-.featured-tours-4  h4:nth-child(2) {
+.featured-tours-4 h4 span {
 
   color: var(--clr-primary-5);
-  text-align: right;
   text-transform: none;
-  font-weight: 400;
 
 }
+
+.featured-tours-3  p {
+
+  text-align: left;
+
+}
+
+.featured-tours-5 {
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
 
 
 .featured-tours-img {
@@ -575,16 +583,27 @@ Featured Tours
   color: black;
   text-transform: uppercase;
   font-weight: 400;
+  padding-bottom: 3.5%;
+
+}
+
+.featured-tours h2 span {
+
+  color: var(--clr-primary-5);
+
+}
+
+.featured-tours .btn {
+
+  -ms-flex-item-align: center;
+
+  text-transform: unset;
+  font-size: 1.2em;
+  font-weight: 350;
 
 }
 
 
-
-.featured-tours p {
-
-  text-align: center;
-
-}
 
 /*
 =============== 
@@ -596,11 +615,11 @@ Contact
 
   color: var(--clr-white);
   background-color: var(--clr-primary-5);
-  padding: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 5%;
 
 }
 
@@ -608,30 +627,48 @@ Contact
 
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  padding: 2%;
 
   
 }
 
+.contact-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .contact h3{
-  padding: 2%;
-  
+  display: flex;
+  justify-content: flex-start;
 }
 
 .contact p{
   color: var(--clr-white);
   margin: 2%;
-
+  align-self: flex-start;
 
 }
 
 .contact .btn{
+
   color: black;
   background: var(--clr-primary-8);
   text-transform: unset;
-  margin: 2%;
+  font-size: 1.2em;
+  font-weight: 350;
 
+}
+
+.contact input {
+
+  width: 40em;
+  height: 3em;
+  margin-right: 1%;
 
 }
 
@@ -670,6 +707,8 @@ Footer
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  letter-spacing: 0.3em;
+  
 
 }
 
@@ -679,6 +718,8 @@ Footer
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-top: 1%;
+  padding-bottom: 1.5%;
 
 
 }
@@ -695,8 +736,8 @@ Footer
   text-decoration: none;
   color: var(--clr-white);
   padding: 0.5%;
-  margin-right: 1em;
-
+  margin-right: 0.5em;
+  font-size: 1.5em;
 
 }
 
